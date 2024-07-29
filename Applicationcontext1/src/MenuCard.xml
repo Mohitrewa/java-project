@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id = "single" class="com.app.application.Hotel" scope="singleton">
+	   
+   </bean>
+   <bean id = "proto" class = "com.app.application.Hotel" scope ="prototype">
+	   
+   </bean>
+   
+   <bean id = "Mani-biriyani" class="com.app.application.Hotel" scope ="singleton">
+   <property name="hotelName" value = "Mani Biryani"></property>
+   <property name="dish" value="IPL Chicken Biryani"></property>
+   <property name="rate" value="199"></property>
+   </bean>
+   <bean id="SS-hyderabad" class="com.app.application.Hotel" scope="singleton">
+	   <property name="hotelName" value="SS Hyderabad"></property>
+	   <property name="dish" value="Chicken Biriyani"></property>
+	   <property name="rate" value ="260"></property>
+   </bean>
+   <bean id="Dindugul-thalapakatti" class="com.app.application.Hotel" scope="prototype">
+	   <property name="hotelName" value="Dindugul Thalapakatti"></property>
+	   <property name="dish" value="Dindugul Chicken Biriyani"></property>
+	   <property name="rate" value ="280"></property>
+   </bean>
+   <bean id="KFC" class="com.app.application.Hotel" scope="prototype">
+	   <property name="hotelName" value="KFC"></property>
+	   <property name="dish" value="Fried Chicken"></property>
+	   <property name="rate" value ="300"></property>
+   </bean>
+   </beans>
